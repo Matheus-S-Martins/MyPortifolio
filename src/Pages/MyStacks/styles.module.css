@@ -1,0 +1,38 @@
+.container_myWork{
+    
+}
+
+.container_projects{
+ border: 1px solid #ffffff;
+ width: 350px;
+ border-radius: 15px;
+ padding: 15px 0px;
+}
+
+.card_project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_project img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.box_info_project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 15px;
+}
+.box_info_project p{
+    margin: 0px;
+}
+
+.container_stacks{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
