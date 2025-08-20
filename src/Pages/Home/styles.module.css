@@ -6,6 +6,7 @@
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-top: 60px;
 }
 
 .container_presentation{
@@ -17,8 +18,22 @@
     gap: 5px;
 }
 
+
 .container_presentation h1, h2{
     margin: 0px;
+}
+
+.button_download{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button_download:hover{
+    background: #ffffff;
+    color: #242424;
+    transition: 0.2s;
 }
 
 .avatar{

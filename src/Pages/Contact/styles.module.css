@@ -1,0 +1,55 @@
+.container_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+}
+
+.formulario_camp{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+}
+
+.formulario_camp p{
+    margin: 0px;
+}
+
+.formulario_camp input , textarea{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.textarea{
+    width: 400px;
+    height: 200px;
+    resize: none;
+}
+
+.button_send{
+    background-color: #ffffff;
+    color: black;
+}
+
+.container_content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}

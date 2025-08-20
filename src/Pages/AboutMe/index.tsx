@@ -11,7 +11,13 @@ function AboutMe() {
       <div className={styles.container_info}>
         <div className={styles.container_presentation}>
           <h1>Sobre Mim</h1>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como</p>
+          <p>Sou formado em ciência da computação desde 2023 pela Universidade Paulista (UNIP) e comecei minha carreira de desenvolvedor em 2018.</p>
+
+          <p>Já tive a oportunidade de participar de projetos desafiadores, como o desenvolvimento de uma <strong>rede social para geração de artes com IA</strong>, que contou com integrações avançadas usando <strong>React.js, Docker, ChatGPT e Leonardo AI</strong>, alcançando mais de <strong>1.000 usuários ativos</strong>.</p>
+
+          <p>Minha experiência também inclui trabalhos com <strong>Moodle, WordPress, BI, PHP, MySQL, C#, Xamarin e SQL Server</strong>, sempre buscando unir boas práticas, usabilidade e desempenho.</p>
+
+          <p>Sou movido por aprendizado constante e gosto de explorar novas tecnologias para criar soluções inovadoras. Além disso, valorizo muito o trabalho em equipe, a troca de conhecimento e o impacto que a tecnologia pode ter na vida das pessoas.</p>
         </div>
       </div>
     </div>
