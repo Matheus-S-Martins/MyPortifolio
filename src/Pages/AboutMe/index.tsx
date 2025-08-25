@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import code1 from '../../assets/code1.jpg';
 
 
 function AboutMe() {
@@ -6,7 +7,7 @@ function AboutMe() {
   return (
     <div className={styles.container_about_me}>
       <div className={styles.container_image}>
-        <img className={styles.image_abaout_me} src="src\assets\code1.jpg" alt="AboutMe" />
+        <img className={styles.image_abaout_me} src={code1} alt="AboutMe" />
       </div>
       <div className={styles.container_info}>
         <div className={styles.container_presentation}>
