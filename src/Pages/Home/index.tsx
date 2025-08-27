@@ -1,5 +1,6 @@
 import styles from './styles.module.css'
 import perfil from '../../assets/images/perfil.jpg';
+import curriculo from './assets/files/curriculo.pdf';
 
 function Home() {
 
@@ -20,9 +21,8 @@ function Home() {
       const urlBlob = window.URL.createObjectURL(new Blob([blob]));
   
       const link = document.createElement("a");
-      link.href = urlBlob;
-      link.setAttribute("download", filename);
-      document.body.appendChild(link);
+      link.href = curriculo;
+      link.download = "curriculo.pdf";
       link.click();
   
       // Limpa depois do download
