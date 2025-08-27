@@ -6,11 +6,13 @@
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    gap: 10px;
 }
 
 .container_image{
     display: flex;
     width: 80%;
+    align-items: center;
 }
 
 .image_abaout_me{

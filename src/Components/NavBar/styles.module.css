@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100%;
     background: #000;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     height: 60px;

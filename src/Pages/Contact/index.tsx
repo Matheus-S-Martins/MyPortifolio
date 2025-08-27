@@ -1,18 +1,22 @@
 import { useState } from 'react';
 import styles from './styles.module.css'
 import emailjs from '@emailjs/browser'
+import Loading from '../../Components/Loading';
 
 function Contact() {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const handleSendEmail = (e) =>{
     e.preventDefault();
+    setLoading(true)
 
     if(name === '' || email === '' || message === ''){
       alert("Preencha todos os campos")
+      setLoading(false)
       return;
     }
 
@@ -31,10 +35,12 @@ function Contact() {
     }, (err) => {
       console.log("ERRO", err)
     })
+    setLoading(false)
   }
 
   return (
-    <div className={styles.container_contact}>
+    <div className={styles.container_contact} id="contato">
+      <Loading enable={loading} />
       <h1>Entre em contato comigo</h1>
       <div className={styles.container_content}>
         <form action="" className={styles.formulario} onSubmit={(e) => handleSendEmail(e)}>
@@ -71,10 +77,10 @@ function Contact() {
 
 
         <div>
-          <p>
+          <h3>
             Estou sempre aberto a novas oportunidades, colaborações e projetos desafiadores.
             Se você deseja conversar sobre tecnologia, desenvolvimento de software ou possíveis parcerias, entre em contato:
-          </p>
+          </h3>
 
         </div>
       </div>

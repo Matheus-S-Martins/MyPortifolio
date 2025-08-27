@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-
+import perfil from '../../assets/images/perfil.jpg';
 function Home() {
 
   const downloadPDF = async (url, filename = "arquivo.pdf") => {
@@ -33,15 +33,15 @@ function Home() {
   };
 
   const handleDownload = () => {
-    downloadPDF("src/assets/files/Currículo_Matheus.pdf", "Currículo_Matheus.pdf");
+    downloadPDF("../../assets/files/Currículo_Matheus.pdf", "Currículo_Matheus.pdf");
   };
 
   return (
-    <div className={styles.container_page}>
+    <div className={styles.container_page} id="inicio">
       <div className={styles.container_presentation}>
         <h1>Desenvlvedor web</h1>
         <h2>Matheus Da Silva Martins</h2>
-        <p>Olá! Meu nome é Matheus Martins e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente atuo como <strong>Desenvolvedor Web</strong>, com foco em <strong>front-end</strong> e na criação de interfaces modernas, intuitivas e integradas com <strong>inteligência artificial</strong>.</p>
+        <p style={{maxWidth: '690px'}}>Olá! Meu nome é Matheus Martins e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente atuo como <strong>Desenvolvedor Web</strong>, com foco em <strong>front-end</strong> e na criação de interfaces modernas, intuitivas e integradas com <strong>inteligência artificial</strong>.</p>
 
         <div>
           <div className={styles.button_download} onClick={handleDownload}>
@@ -50,7 +50,7 @@ function Home() {
         </div>
       </div>
       <div>
-        <img className={styles.avatar} src="https://i.pinimg.com/originals/d5/4d/49/d54d49aff6b7ec1257928646dac88b0f.jpg" alt="Avatar" />
+        <img className={styles.avatar} src={perfil} alt="Avatar" />
       </div>
     </div>
   )
