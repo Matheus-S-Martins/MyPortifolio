@@ -33,7 +33,7 @@ function Home() {
   };
 
   const handleDownload = () => {
-    downloadPDF("../../assets/files/Currículo_Matheus.pdf", "Currículo_Matheus.pdf");
+    downloadPDF("../../assets/files/Curriculo_Matheus.pdf", "Currículo_Matheus.pdf");
   };
 
   return (
