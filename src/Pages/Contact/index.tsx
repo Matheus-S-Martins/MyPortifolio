@@ -10,6 +10,11 @@ function Contact() {
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
 
+  function isValidEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
   const handleSendEmail = (e) =>{
     e.preventDefault();
     setLoading(true)
@@ -20,6 +25,11 @@ function Contact() {
       return;
     }
 
+    if(!isValidEmail(email)){
+      alert("Email digitado não é um email valido ")
+      setLoading(false)
+      return;
+    }
     const templateParams = {
       from_name: name,
       message: message,

@@ -2,7 +2,11 @@ import styles from './styles.module.css'
 
 function NavBar() {
   const handleScroll = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY - 80; // 80px da navbar
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
   return (
     <div className={styles.container_component}>
