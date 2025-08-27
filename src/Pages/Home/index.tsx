@@ -1,40 +1,19 @@
 import styles from './styles.module.css'
 import perfil from '../../assets/images/perfil.jpg';
-import curriculo from '../../assets/files/curriculo.pdf';
 
 function Home() {
 
-  const downloadPDF = async (url, filename = "arquivo.pdf") => {
+  const downloadPdf = () => {
     try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/pdf",
-        },
-      });
-  
-      if (!response.ok) {
-        throw new Error("Erro ao baixar o arquivo");
-      }
-  
-      const blob = await response.blob();
-      const urlBlob = window.URL.createObjectURL(new Blob([blob]));
-  
       const link = document.createElement("a");
-      link.href = curriculo;
-      link.download = "curriculo.pdf";
+      link.href = "/files/curriculo.pdf"; // caminho relativo ao public/
+      link.download = "curriculo.pdf";    // nome do arquivo baixado
+      document.body.appendChild(link);
       link.click();
-  
-      // Limpa depois do download
-      link.parentNode.removeChild(link);
-      window.URL.revokeObjectURL(urlBlob);
+      document.body.removeChild(link);
     } catch (error) {
       console.error("Erro no download:", error);
     }
-  };
-
-  const handleDownload = () => {
-    downloadPDF("../../../public/files/curriculo.pdf", "Currículo_Matheus.pdf");
   };
 
   return (
@@ -45,7 +24,7 @@ function Home() {
         <p style={{maxWidth: '690px'}}>Olá! Meu nome é Matheus Martins e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente atuo como <strong>Desenvolvedor Web</strong>, com foco em <strong>front-end</strong> e na criação de interfaces modernas, intuitivas e integradas com <strong>inteligência artificial</strong>.</p>
 
         <div>
-          <div className={styles.button_download} onClick={handleDownload}>
+          <div className={styles.button_download} onClick={downloadPdf}>
             Download CV
           </div>
         </div>
