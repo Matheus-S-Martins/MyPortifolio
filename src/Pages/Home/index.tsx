@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 import perfil from '../../assets/images/perfil.jpg';
-import curriculo from './assets/files/curriculo.pdf';
+import curriculo from '../../assets/files/curriculo.pdf';
 
 function Home() {
 
