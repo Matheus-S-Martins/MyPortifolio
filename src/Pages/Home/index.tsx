@@ -1,5 +1,6 @@
 import styles from './styles.module.css'
 import perfil from '../../assets/images/perfil.jpg';
+
 function Home() {
 
   const downloadPDF = async (url, filename = "arquivo.pdf") => {
@@ -33,7 +34,7 @@ function Home() {
   };
 
   const handleDownload = () => {
-    downloadPDF("../../assets/files/curriculo.pdf", "Currículo_Matheus.pdf");
+    downloadPDF("../../../public/files/curriculo.pdf", "Currículo_Matheus.pdf");
   };
 
   return (
