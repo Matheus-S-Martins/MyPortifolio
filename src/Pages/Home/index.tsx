@@ -7,7 +7,7 @@ function Home() {
     try {
       const link = document.createElement("a");
       link.href = "/files/curriculo.pdf"; // caminho relativo ao public/
-      link.download = "curriculo.pdf";    // nome do arquivo baixado
+      link.download = "Curriculo_Matheus.pdf";    // nome do arquivo baixado
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

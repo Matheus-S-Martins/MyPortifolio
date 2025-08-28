@@ -6,9 +6,8 @@
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #ffffffde;
 }
-
-
 
 .formulario{
     display: flex;
@@ -23,7 +22,6 @@
     flex-direction: column;
     align-items: start;
     gap: 5px;
-
 }
 
 .formulario_camp p{
