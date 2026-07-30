@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className={styles.container_page} id="inicio">
       <div className={styles.container_presentation}>
-        <h1>Desenvlvedor web</h1>
+        <h1>Desenvolvedor web</h1>
         <h2>Matheus Da Silva Martins</h2>
         <p style={{maxWidth: '690px'}}>Olá! Meu nome é Matheus Martins e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente atuo como <strong>Desenvolvedor Web</strong>, com foco em <strong>front-end</strong> e na criação de interfaces modernas, intuitivas e integradas com <strong>inteligência artificial</strong>.</p>
 
